@@ -1,0 +1,6 @@
+
+<md-button ui-sref="cars.details({id: $ctrl.car.id})" layout="row" class="carPreview" ng-click="$ctrl.showDetails({car:car})" ng-class="{'selected' : car === $ctrl.selected }">
+      <img class="avatar1" ng-src="/img/{{$ctrl.car.id}}.png" />
+      <h3>{{$ctrl.car.name}}</h3>
+</md-button>
+

@@ -1,0 +1,12 @@
+<md-bottom-sheet>
+<h2>Buy yourself a <span ng-transclude></span></h2>
+<form ng-submit="$ctrl.buy()">
+    <md-input-container>
+      <label>Amount</label>
+      <input type="text" ng-model="$ctrl.amount" required>
+    </md-input-container>
+    {{$ctrl.amount}}
+     <md-button type="submit" class="md-primary">Save</md-button>
+</form>    
+
+</md-bottom-sheet>

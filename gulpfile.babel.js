@@ -78,6 +78,7 @@ gulp.task('serve', () => {
 
   serve({
     port: process.env.PORT || 3000,
+    // open a browser?
     open: false,
     server: {baseDir: root},
     middleware: [

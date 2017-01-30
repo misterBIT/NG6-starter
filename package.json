@@ -5,7 +5,11 @@
   "main": "index.js",
   "dependencies": {
     "angular": "^1.5.0",
+    "angular-animate": "^1.6.1",
+    "angular-aria": "^1.6.1",
+    "angular-material": "^1.1.1",
     "angular-ui-router": "^1.0.0-beta.1",
+    "material-design-icons": "^3.0.1",
     "normalize.css": "^3.0.3"
   },
   "devDependencies": {
@@ -65,11 +69,7 @@
     "webpack",
     "es6"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/angularclass/NG6-starter.git"
-  },
-  "author": "AngularClass",
+  "author": "misterBIT",
   "license": "Apache-2.0",
   "babel": {
     "plugins": [

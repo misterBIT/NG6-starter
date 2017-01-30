@@ -1,8 +1,32 @@
-<nav class="navbar">
-  <div class="logo">
-    <h1><a ui-sref="home">{{ $ctrl.name }}</a></h1>
+<md-nav-bar md-selected-nav-item="currentNavItem">
+  <md-button class="menu md-icon-button" hide-gt-sm ng-click="$ctrl.toggleList()"
+              aria-label="Show User List">
+    ☰
+  </md-button>
+
+  <md-nav-item md-nav-sref="home" name="home">Home</md-nav-item>
+  <md-nav-item md-nav-sref="cars" name="cars">Cars</md-nav-item>
+  <md-nav-item md-nav-sref="about" name="about">About</md-nav-item>
+  <md-nav-item md-nav-click="$ctrl.showCart()" name="cart">Cart {{$ctrl.cartSize}}</md-nav-item>
+  
+
+</md-nav-bar>
+<div style="visibility: hidden">
+  <div class="md-dialog-container" id="myStaticDialog">
+    <md-dialog>
+        <section class="md-dialog-content">
+            <h3>Cart</h3>
+            <md-list>
+              <md-list-item ng-repeat="item in $ctrl.cartItems">
+                <div class="md-list-item-text">
+                  {{item.name}} -- {{item.amount}}
+                </div>
+              </md-list-item>
+            </md-list>
+          </section>     
+        
+    </md-dialog>
   </div>
-  <div class="nav-links">
-    <span><a ui-sref="about">about</a></span>
-  </div>
-</nav>
+</div>
+
+

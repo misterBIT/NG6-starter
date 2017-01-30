@@ -1,7 +1,25 @@
+@import "../../node_modules/angular-material/angular-material.css";
+
 @import "common/common";
 
-.app {
+// .app {
+//   height: 100%;
+//   background-color: $lightBgColor;
+// }
+
+// section {
+//   padding: 10px;
+// }
+
+[ng-cloak] {
+  display: none;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
   height: 100%;
-  background-color: $lightBgColor;
+  margin: 0px;
+  padding: 0px;
 }
 

@@ -1,0 +1,12 @@
+<section class="carDetails">
+  <h1>{{ $ctrl.car.name }}</h1>
+  <img ng-src="/img/{{$ctrl.car.id}}.png" />
+  <h2>Speed: {{$ctrl.car.speed}}</h2>
+
+  <md-button ui-sref="cars.edit({id: $ctrl.car.id})">
+    Edit
+  </md-button>
+  <md-button class="md-primary md-raised" ng-click="$ctrl.buy()" >
+    Buy
+  </md-button>
+</section>

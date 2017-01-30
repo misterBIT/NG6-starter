@@ -1,0 +1,23 @@
+<!--<navbar></navbar>-->
+
+<section  flex layout="row">
+  <md-sidenav class="md-whiteframe-4dp" md-is-locked-open="true || $mdMedia('gt-sm')"
+              md-component-id="left" ng-click="$ctrl.toggleList()">
+      <md-button class="md-accent md-raised" ui-sref="carEdit" layout-align="end">New Car</md-button>
+      <car-search on-search="$ctrl.onSearch(filter)"></car-search>            
+      <car-list cars="$ctrl.cars" onSelected="$ctrl.onCarSelected(id)"></car-list>
+  </md-sidenav>
+
+  <md-content flex id="content">
+    <ui-view></ui-view>
+  </md-content>
+
+</section>
+
+
+
+
+
+  
+
+
