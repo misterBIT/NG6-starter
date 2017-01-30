@@ -9,7 +9,6 @@
     "angular-aria": "^1.6.1",
     "angular-material": "^1.1.1",
     "angular-ui-router": "^1.0.0-beta.1",
-    "material-design-icons": "^3.0.1",
     "normalize.css": "^3.0.3"
   },
   "devDependencies": {
